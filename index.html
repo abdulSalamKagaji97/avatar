@@ -47,6 +47,7 @@
       var myHeaders = new Headers();
       myHeaders.append("Authorization", "Bearer"+document.getElementById("apiKey").value);
       myHeaders.append("Content-Type", "application/json");
+      myHeaders.append('Access-Control-Allow-Origin', '*');
 
       var raw = JSON.stringify({
         "user_query": "account insights of castle walter",
